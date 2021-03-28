@@ -1,0 +1,39 @@
+$color-grey: rgb(82, 82, 82);
+$color-white-dark: rgb(228, 228, 228);
+
+.homepage {
+  min-width: 114rem;
+  height: 100vh;
+  background-color: $color-white-dark;
+
+  .directory-menu {
+    padding: 5rem;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: auto auto;
+    gap: 2rem;
+  }
+
+  .menu-item {
+    grid-column: span 2;
+    height: 25rem;
+    border: 1px solid $color-grey;
+    border-radius: 5px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &:last-child,
+    &:nth-last-child(2) {
+      grid-column: span 3;
+    }
+  }
+
+  .content {
+    padding: 3rem;
+    border: 1px solid $color-grey;
+    border-radius: 5px;
+    text-align: center;
+  }
+}
