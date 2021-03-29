@@ -1,0 +1,7 @@
+.directory-menu {
+  padding: 5rem;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: auto auto;
+  gap: 2rem;
+}

@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-white-dark: rgb(228, 228, 228);
+  --color-grey: rgb(82, 82, 82);
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  padding: 2rem;
+}
+
+.container {
+  max-width: 114rem;
+  margin: 0 auto;
+}
+
+.mb-small {
+  margin-bottom: 1rem;
+}
+.mb-medium {
+  margin-bottom: 2rem;
+}
+.mb-large {
+  margin-bottom: 4rem;
+}

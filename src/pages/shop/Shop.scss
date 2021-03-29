@@ -1,0 +1,26 @@
+.shop-page {
+  width: 100%;
+}
+
+.shop-heading {
+  text-decoration: none;
+  font-size: 5rem;
+  color: var(--color-grey);
+  text-transform: uppercase;
+  margin: 3rem auto;
+  display: block;
+  text-align: center;
+  letter-spacing: 0.3rem;
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr max-content 1fr;
+  align-items: center;
+  column-gap: 1.5rem;
+
+  &::before,
+  &::after {
+    content: '';
+    height: 2px;
+    background-color: rgb(32, 32, 32);
+  }
+}
