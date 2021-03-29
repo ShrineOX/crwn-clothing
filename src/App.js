@@ -1,9 +1,10 @@
 import React from 'react';
 import './App.scss';
-import { Route, BrowserRouter as Router } from 'react-router-dom';
+import { Route, Switch, BrowserRouter as Router } from 'react-router-dom';
 
 import HomePage from './pages/homepage/HomePage';
 import Shop from './pages/shop/Shop';
+import Header from './components/Header/Header';
 
 const Hats = () => <h1>HATS PAGE</h1>;
 const Jeans = () => <h1>Jeans PAGE</h1>;
@@ -15,6 +16,7 @@ function App() {
   return (
     <div>
       <Router>
+        <Header />
         <Route exact path="/" component={HomePage} />
         <Route exact path="/shop" component={Shop} />
         <Route exact path="/shop/hats" component={Hats} />

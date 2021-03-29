@@ -1,0 +1,17 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav {
+  display: flex;
+  &__link {
+    font-size: 2rem;
+    color: var(--color-grey);
+    display: block;
+    margin: 0 1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+}
