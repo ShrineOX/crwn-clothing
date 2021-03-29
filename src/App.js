@@ -1,10 +1,11 @@
 import React from 'react';
 import './App.scss';
-import { Route, Switch, BrowserRouter as Router } from 'react-router-dom';
+import { Route, BrowserRouter as Router } from 'react-router-dom';
 
 import HomePage from './pages/homepage/HomePage';
 import Shop from './pages/shop/Shop';
 import Header from './components/Header/Header';
+import SignInAndSignUp from './pages/sign-in-and-sign-up/SignInAndSignUp';
 
 const Hats = () => <h1>HATS PAGE</h1>;
 const Jeans = () => <h1>Jeans PAGE</h1>;
@@ -22,6 +23,7 @@ function App() {
         <Route exact path="/shop/hats" component={Hats} />
         <Route exact path="/shop/sneakers" component={Jeans} />
         <Route exact path="/shop/sneakers/:topicId" component={JeansOne} />
+        <Route exact path="/sign-in" component={SignInAndSignUp} />
       </Router>
     </div>
   );
