@@ -13,4 +13,15 @@
     color: var(--color-grey);
     background-color: #fff;
   }
+
+  &.isGoogleSignIn {
+    background-color: rgb(56, 136, 228);
+    border: 2px outset rgb(56, 136, 228);
+    color: #fff;
+
+    &:hover {
+      background-color: transparent;
+      color: rgb(56, 136, 228);
+    }
+  }
 }

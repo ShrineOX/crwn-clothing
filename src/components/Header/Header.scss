@@ -6,12 +6,22 @@
 
 .nav {
   display: flex;
+  gap: 2rem;
   &__link {
     font-size: 2rem;
     color: var(--color-grey);
+    padding: 1rem 1.5rem;
     display: block;
-    margin: 0 1rem;
     text-decoration: none;
     text-transform: uppercase;
+    transition: background-color 0.3s ease, translateY 0.2s;
+
+    &:hover {
+      background-color: var(--color-white-dark);
+      border-radius: 999px;
+    }
+    &:active {
+      transform: translateY(4px);
+    }
   }
 }

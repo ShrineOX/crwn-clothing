@@ -1,7 +1,7 @@
 import './CustomButton.scss';
 
-const CustomButton = ({ children, ...otherProps }) => (
-  <button className="custom-btn" {...otherProps}>
+const CustomButton = ({ children, isGoogleSignIn, ...otherProps }) => (
+  <button className={`${isGoogleSignIn && 'isGoogleSignIn'} custom-btn`} {...otherProps}>
     {children}
   </button>
 );
