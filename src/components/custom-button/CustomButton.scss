@@ -1,5 +1,5 @@
 .custom-btn {
-  padding: 1.2rem 3rem;
+  padding: 1.2rem 1rem;
   background-color: var(--color-grey);
   color: #fff;
   font-size: 2rem;
@@ -14,7 +14,7 @@
     background-color: #fff;
   }
 
-  &.isGoogleSignIn {
+  &.googleSignIn {
     background-color: rgb(56, 136, 228);
     border: 2px outset rgb(56, 136, 228);
     color: #fff;
@@ -23,5 +23,9 @@
       background-color: transparent;
       color: rgb(56, 136, 228);
     }
+  }
+
+  &.stretch {
+    width: 100%;
   }
 }

@@ -14,6 +14,33 @@ const config = {
 
 firebase.initializeApp(config);
 
+//create a user and save in firestore
+export const createUserProfileDocument = async (userAuth, additionalData) => {
+  if (!userAuth) return;
+
+  // query to firebase to check whether this user is already exist
+  const userRef = firestore.doc(`users/${userAuth.uid}`);
+  const snapShot = await userRef.get();
+
+  // create a user and store in firebase database if the user does not exist
+  if (!snapShot.exists) {
+    const { displayName, email, photoURL } = userAuth;
+    const createAt = new Date();
+    try {
+      await userRef.set({
+        displayName,
+        email,
+        createAt,
+        photoURL,
+        ...additionalData,
+      });
+    } catch (error) {
+      console.error('error createing user ', error.message);
+    }
+  }
+  return userRef;
+};
+
 export const auth = firebase.auth();
 export const firestore = firebase.firestore();
 

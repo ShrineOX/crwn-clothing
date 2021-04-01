@@ -5,6 +5,16 @@
 .sign-in-and-sign-out {
   padding-top: 8rem;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
   column-gap: 10rem;
+  justify-items: center;
+
+  & > * {
+    width: 90%;
+  }
+
+  .desciption {
+    font-size: 2rem;
+    margin: 2rem 0 4rem 0;
+  }
 }
